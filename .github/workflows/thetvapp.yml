@@ -1,0 +1,39 @@
+name: Update TheTVApp Playlist
+
+on:
+  schedule:
+    - cron: '0 2 * * *'  # every 2hrs
+  workflow_dispatch:        # Manual run from GitHub UI
+
+jobs:
+  update-playlist:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0  # Full git history for proper pull/rebase
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.x'
+
+      - name: Install requests
+        run: pip install requests
+
+      - name: Run update script
+        run: python thetvapp.py
+
+      - name: Commit and push changes
+        run: |
+          git config user.name "GitHub Actions"
+          git config user.email "actions@github.com"
+          
+          git add TheTVApp.m3u8
+          git commit -m "Auto-update TheTVApp.m3u8" || echo "No changes to commit"
+          
+          git push origin master
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

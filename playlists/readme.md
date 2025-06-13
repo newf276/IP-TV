@@ -1,0 +1,2 @@
+- M3U: https://raw.githubusercontent.com/newf276/test/refs/heads/master/playlists/xumo.m3u
+- EPG: https://raw.githubusercontent.com/newf276/test/master/playlists/xumo.xml.gz
