@@ -30,7 +30,7 @@ def main():
     response.raise_for_status()
     lines = response.text.splitlines()
 
-    result = ['#EXTM3U url-tvg="https://tinyurl.com/merged2423-epg"']
+    result = ['#EXTM3U url-tvg="https://tinyurl.com/gtvdlepg"']
     i = 0
     kept = 0
 
