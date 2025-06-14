@@ -7,7 +7,7 @@ on:
   schedule:
     # Runs every 2hrs (adjust cron schedule as needed)
     # See: https://crontab.guru/
-    - cron: '0 2 * * *'
+    - cron: '0 6 * * *'
 
 jobs:
   generate: # Name of the job
