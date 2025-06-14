@@ -23,7 +23,7 @@ jobs:
         run: pip install requests
 
       - name: Run epg grabber
-        run: cd udptv && python udptv-epg-grabber.py
+        run: python udptv-epg-grabber.py
 
       - name: Commit and push changes
         run: |
