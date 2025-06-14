@@ -10,4 +10,4 @@ This repository automatically generates an M3U playlist and XMLTV EPG file for X
 - M3U: https://raw.githubusercontent.com/newf276/xumo-playlist-generator/refs/heads/master/playlists/xumo_playlist.m3u
 - TIVIMATE USERS: Use `IPTV smarters` as your user-agent for the playlist. If channels freeze going in and out of commercials. 
 
-![Screenshot](https://github.com/newf276/xumo-playlist-generator/blob/master/Screenshot%202025-04-16%20202330.jpg?raw=true)
+![Screenshot](https://github.com/newf276/IP-TV/blob/master/Screenshot%202025-04-16%20202330.jpg?raw=true)
